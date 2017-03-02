@@ -14,11 +14,11 @@ Open your preferred command line tool and run follow some steps below:
 6. `npm run build` to build final version.
 
 ## Features
-* 1. You can separate the elements (header, footer, banner, aside...) to be reused many times without trouble.
-* 2. Prettify HTML code.
-* 3. Using SASS library.
-* 4. Minify JS and CSS files.
-* 5. Minify images (jpg, png, svg...) seamlessly.
+* You can separate the elements (header, footer, banner, aside...) to be reused many times without trouble.
+* Prettify HTML code.
+* Using SASS library.
+* Minify JS and CSS files.
+* Minify images (jpg, png, svg...) seamlessly.
 
 ## Project structure
 <pre>
