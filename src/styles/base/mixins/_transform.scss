@@ -1,0 +1,45 @@
+// ----------------------------------------------------------------------
+
+  // Transform
+
+// ----------------------------------------------------------------------
+
+// example: @include transform("origin", 0, 0);
+
+@mixin transform($type, $values...) {
+  $n: length($values);
+  $i: 1;
+
+  $originVal: ();
+
+  @while $i <= $n {
+    $itemVal: (nth($values, $i));
+    @if $type == "rotate" or $type == "rotateY" or $type == "rotateX" {
+      $originVal: append($originVal, $itemVal + deg);
+    } @else {
+      $originVal: append($originVal, $itemVal + px);
+    }
+
+    $i: $i + 1;
+  }
+  -webkit-transform: #{$type}($originVal);
+     -moz-transform: #{$type}($originVal);
+          transform: #{$type}($originVal);
+}
+@mixin reset-transform() {
+    top: 0 !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+}
+
+
+@mixin transform-customize($string) {
+  -webkit-transform: $string;
+     -moz-transform: $string;
+     -ms-transform: $string;
+       -o-transform: $string;
+          transform: $string;
+}

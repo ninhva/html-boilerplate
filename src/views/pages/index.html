@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', {
+    "title": "HTML Boilerplate"
+  })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+<body>
+  <div class="wrapper">
+    <!-- include header.html -->
+    @@include('../layouts/header.html')
+
+    <!-- include banner.html -->
+    @@include('../partials/banner.html')
+
+    <section class="main-container">
+      <div id="a" class="block-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="center">
+              <div class="col-xs-12">
+                <h4 class="title-block">HTML Boilerplate</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+  </div>
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+</html>

@@ -1,0 +1,26 @@
+// ----------------------------------------------------------------------
+
+  // Styling Search Cancel Button
+
+// ----------------------------------------------------------------------
+@mixin search-cancel-button($right: -10px, $top: -11px) {
+    input[type="search"]::-webkit-search-cancel-button {
+        position: relative;
+        -webkit-appearance: none;
+    }
+    input[type="search"]::-webkit-search-cancel-button::after {
+        content: ' ';
+        position: absolute;
+        z-index: 9899;
+        display: block;
+        width: 22px;
+        height: 22px;
+        right: $right;
+        top: $top;
+        opacity: .3;
+        background-image: url("#{$image-url}/close-search.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}

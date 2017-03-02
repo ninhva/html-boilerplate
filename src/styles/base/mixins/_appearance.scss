@@ -1,0 +1,13 @@
+// ----------------------------------------------------------------------
+
+  // Appearance
+
+// ----------------------------------------------------------------------
+
+// example: @include appearance(none);
+
+@mixin appearance($value) {
+    -moz-appearance: $value;
+    -webkit-appearance: $value;
+    appearance: $value;
+}
