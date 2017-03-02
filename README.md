@@ -48,4 +48,4 @@ html-boilerplate/
 
 ## License
 
-MIT License
+[MIT License](html-boilerplate/LICENSE)
